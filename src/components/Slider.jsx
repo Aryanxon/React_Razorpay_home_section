@@ -14,10 +14,11 @@ function Slide() {
   const newbutton = <button className='bg-green-600 px-[10px] py-1 rounded-lg text-[10px]'>New</button>;
 
   return (
-    <div className='hidden md:block w-1/6 h-full bg-gray-700 fixed z-50'>
-         <FiMenu className='text-white mx-2 my-4 flex md:hidden'/>
-        <img src={Razorpay_logo} alt="Razorpay Logo" className='w-[7rem] h-[3rem] mx-auto'/>
-        <div className=''>
+    <>
+    <div className='hidden md:block w-full md:w-1/6 h-full bg-gray-700 fixed z-50'>
+      <FiMenu className='text-white mx-2 my-4'/>
+        <img src={Razorpay_logo} alt="Razorpay Logo" className='w-[7rem] h-[3rem] mx-auto hidden md:block'/>
+        <div className='hidden md:block'>
             <ul className='pl-1 pb-4 border-b-2 border-gray-500'>
                 <Slideroptions text='Home' icon={<FaHome />}/>
                 <Slideroptions text='Payouts' icon={<FaArrowRight className='-rotate-45'/>} />
@@ -34,6 +35,7 @@ function Slide() {
             </ul>
         </div>
     </div>
+    </>
   )
 }
 
