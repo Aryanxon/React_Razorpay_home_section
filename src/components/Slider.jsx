@@ -9,7 +9,7 @@ import { BsFillSendFill } from "react-icons/bs";
 import { FiMenu } from "react-icons/fi";
 
 
-function Slide() {
+function Slider() {
 
   const newbutton = <button className='bg-green-600 px-[10px] py-1 rounded-lg text-[10px]'>New</button>;
 
@@ -39,4 +39,4 @@ function Slide() {
   )
 }
 
-export default Slide
+export default Slider
